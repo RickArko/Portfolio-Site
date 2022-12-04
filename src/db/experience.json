@@ -4,31 +4,31 @@
             "employer_name" : "Shipbob",
             "employment_duration" : "February 2022 - now",
             "job_title" : "Data Scientist",
-            "job_description" : "Data Scientist specializing in Forecasting."
+            "job_description" : "Data Scientist specializing in Forecasting. Built a scalable LightGbm/Prophet model dramatically improving short-term forecast accuracy. Lead R&D for Merchant level forecasting as well as unsupervised anomoly detection methods. Built custom pipelines to support promotions and inventory stock-out adjustments. Guide overall software development strategy and help implement best practices."
         },
         "2" : {
             "employer_name" : "Coyote Logistics",
-            "employment_duration" : "2019 - February 2022",
+            "employment_duration" : "June 2021 - February 2022",
             "job_title" : "Senior Data Scientist",
-            "job_description" : "Senior Data Scientist specializing in real time pricing. Expert maintainer of various machine learning and statistical models that powered the live pricing service and multiple business critical services."
+            "job_description" : "Senior Data Scientist specializing in real time pricing. Expert maintainer of various machine learning and statistical models that powered the live pricing service and multiple business critical services. Led development for automated tender acceptance. Interview, hire, and mentor numerous all applicants and hires helping grow a team of 2 to over 10."
         },
         "3" : {
             "employer_name" : "Coyote Logistics",
-            "employment_duration" : "July 2017 - 2019",
+            "employment_duration" : "July 2017 - June 2021",
             "job_title" : "Data Scientist",
-            "job_description" : ""
+            "job_description" : "Deploy various statistics and ML-based pricing models using ensemble/boosting techniques, LightGBM, XGBoost, Catboost, Random Forest Quantile Regression, KNN-regression, etc. Built algorithms for freight recommendation using collaborative filtering and ML models. Implement shapely endpoint to give human readable explanations for model recommendations. Validate production recommender service with A/B tests."
         },
         "4" : {
             "employer_name" : "Coyote Logistics",
-            "employment_duration" : "2016 - july 2017",
+            "employment_duration" : "July 2015 - August 2017",
             "job_title" : "Data Science Analyst",
-            "job_description" : "Junior member of newly formed Data Science team. Largely focused on forecasting and freight recommendation service."
+            "job_description" : "Junior Data Scientist on newly formed team. Built and maintained custom enterprise account forecasts with R and SPSS (ARIMA, ETS, etc.). Built and automated freight matching algorithms with R and Python."
         },
         "5" : {
             "employer_name" : "RAR Enabled",
             "employment_duration" : "January 2015 - July 2015",
             "job_title" : "Data Analyst",
-            "job_description" : ""
+            "job_description" : "Develop predictive models for 7 different debt portfolios(Healthcare, Utilities, etc.) to segment debtors based on likelihood to pay. Score incoming placements and recommend collection strategy for optimal collection efficiency."
         }       
     }
 }
