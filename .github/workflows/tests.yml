@@ -1,0 +1,17 @@
+on: [push]
+
+name: Tests
+
+env:
+  RECAPTCHA_SITE_KEY: ${{ secrets.RECAPTCHA_SITE_KEY }}
+  RECAPTCHA_SECRET_KEY: ${{ secrets.RECAPTCHA_SECRET_KEY }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+    name: Run tests within Docker container
+    steps:
+      - name: Run tests
+        id: tests
+        uses: rickarko/rickarko-portfolio@main

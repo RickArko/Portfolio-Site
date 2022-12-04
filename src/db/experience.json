@@ -1,0 +1,34 @@
+{
+    "experience" : {
+        "1" : {
+            "employer_name" : "Shipbob",
+            "employment_duration" : "February 2022 - now",
+            "job_title" : "Data Scientist",
+            "job_description" : "Data Scientist specializing in Forecasting."
+        },
+        "2" : {
+            "employer_name" : "Coyote Logistics",
+            "employment_duration" : "2019 - February 2022",
+            "job_title" : "Senior Data Scientist",
+            "job_description" : "Senior Data Scientist specializing in real time pricing. Expert maintainer of various machine learning and statistical models that powered the live pricing service and multiple business critical services."
+        },
+        "3" : {
+            "employer_name" : "Coyote Logistics",
+            "employment_duration" : "July 2017 - 2019",
+            "job_title" : "Data Scientist",
+            "job_description" : ""
+        },
+        "4" : {
+            "employer_name" : "Coyote Logistics",
+            "employment_duration" : "2016 - july 2017",
+            "job_title" : "Data Science Analyst",
+            "job_description" : "Junior member of newly formed Data Science team. Largely focused on forecasting and freight recommendation service."
+        },
+        "5" : {
+            "employer_name" : "RAR Enabled",
+            "employment_duration" : "January 2015 - July 2015",
+            "job_title" : "Data Analyst",
+            "job_description" : ""
+        }       
+    }
+}
