@@ -117,6 +117,8 @@ def context_variables():
         'upstream_url' : upstream_url
     }
 
+application = app
+
 if __name__ == "__main__":
     
     app.run(
