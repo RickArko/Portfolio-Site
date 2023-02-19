@@ -10,25 +10,25 @@
             "employer_name" : "Coyote Logistics",
             "employment_duration" : "June 2021 - February 2022",
             "job_title" : "Senior Data Scientist",
-            "job_description" : "Senior Data Scientist specializing in real time pricing. Expert maintainer of various machine learning and statistical models that powered the live pricing service and multiple business critical services. Led development for automated tender acceptance. Interview, hire, and mentor numerous all applicants and hires helping grow a team of 2 to over 10."
+            "job_description" : "As a Senior Data Scientist specializing in real time pricing I was the Expert maintainer of various machine learning and statistical models that power the live pricing service and multiple business critical services (carrier rep compensation, auto tender acceptance, auto spot bidding, book it now, etc.). Led development for automated tender acceptance. Led development of a new pricing service that achieves the same MAD as the best ensemle model while only requiring 5 input features common to all shipments. Built the entire CI/CD pipeline managing multiple deployments for on-premise and cloud environments, acting as both Product Manager and Lead developer. Created a scalabe REST service on AKS implementing batch and shapely endpoints for extreme speed and interpretability when needed. Interview, hire, and mentor all applicants and new team members, helping to grow a team of 2 to over 10."
         },
         "3" : {
             "employer_name" : "Coyote Logistics",
             "employment_duration" : "July 2017 - June 2021",
             "job_title" : "Data Scientist",
-            "job_description" : "Deploy various statistics and ML-based pricing models using ensemble/boosting techniques, LightGBM, XGBoost, Catboost, Random Forest Quantile Regression, KNN-regression, etc. Built algorithms for freight recommendation using collaborative filtering and ML models. Implement shapely endpoint to give human readable explanations for model recommendations. Validate production recommender service with A/B tests."
+            "job_description" : "As a Data Scientist I deployed numerous statistics and ML-based pricing models using ensemble/boosting techniques, LightGBM, XGBoost, Catboost, Random Forest Quantile Regression, KNN-regression, etc. Helped tune lightgbm based recommendation model and demonstrate lift. Implement shapely endpoint to give human readable explanations for model recommendations. Validate production recommender service with A/B tests."
         },
         "4" : {
             "employer_name" : "Coyote Logistics",
             "employment_duration" : "July 2015 - August 2017",
             "job_title" : "Data Science Analyst",
-            "job_description" : "Junior Data Scientist on newly formed team. Built and maintained custom enterprise account forecasts with R and SPSS (ARIMA, ETS, etc.). Built and automated freight matching algorithms with R and Python."
+            "job_description" : "Junior Data Scientist on a newly formed team. Built and maintained custom enterprise account forecasts with R and SPSS (ARIMA, ETS, etc.). Built and automated freight matching algorithms with R and Python. Collaborated with serval Data Scientists and Software Engineers to create multiple iterations of collaborative filtering, statistical likelihood and machine learning based based recommendation engines. Developed and led AB test to determine the best algorithm to power live MyMatches application with a few hundred users."
         },
         "5" : {
             "employer_name" : "RAR Enabled",
             "employment_duration" : "January 2015 - July 2015",
             "job_title" : "Data Analyst",
-            "job_description" : "Develop predictive models for 7 different debt portfolios(Healthcare, Utilities, etc.) to segment debtors based on likelihood to pay. Score incoming placements and recommend collection strategy for optimal collection efficiency."
+            "job_description" : "Led predictive model development for 7 different debt portfolios(Healthcare, Utilities, etc.). Built numerous classification and regression models to segment debtors based on likelihood to pay and total expected value. Scored incoming placements and perform analysis and recommendations for optimzing revenue collection."
         }       
     }
 }
