@@ -24,12 +24,6 @@ def home():
             home_data = json.load(f)
         return render_template('home.html', context=home_data)
 
-# @app.route('/services/')
-# def services():
-#     if request.method == 'GET':
-#         with open(constants.SERVICES_PATH) as f:
-#             service_data = json.load(f)
-#         return render_template('services.html', context=service_data)
 
 @app.route('/experience/')
 def experience():
@@ -49,61 +43,6 @@ def projects():
         with open(constants.PROJECT_PATH) as f:
             projects_data = json.load(f)
         return render_template('projects.html', context=projects_data)
-
-@app.route('/contact/', methods=['GET', 'POST'])
-def contact():
-    
-    context = {
-        'feedback_message' : '',
-        'alert_type' : ''
-    }
-
-    try:
-        with open(constants.CONTACT_PATH) as f:
-            contact_data = json.load(f)
-            num_of_objects = len(contact_data)
-            idx = 1 if num_of_objects == 0 else num_of_objects + 1
-    except (FileNotFoundError, json.JSONDecodeError):
-        # FileNotFoundError - create the file if not there
-        # json.JSONDecodeError - add {} to file if exists but empty
-        with open(constants.CONTACT_PATH, 'w') as f:
-            f.write(json.dumps({}))
-
-    if request.method == 'GET':
-        return render_template('contact.html', context=context)
-
-    if request.method == 'POST':
-
-        if not recaptcha.verify():
-            context['feedback_message'] = "Suspicious of robot activities"
-            context['alert_type'] = 'danger'
-            return render_template('contact.html', context=context)
-
-        timestamp_now = int(datetime.now().timestamp())
-        
-        try:
-            form_data = {
-                'name' : validate_string(request.form['name']),
-                'email' : validate_email(request.form['email']).email,
-                'subject' : validate_string(request.form['subject']),
-                'message' : validate_string(request.form['message'])
-            }
-        except:
-            context['feedback_message'] = "You've entered incorrect data"
-            context['alert_type'] = 'danger'
-            return render_template('contact.html', context=context)
-
-        contact_data[idx] = form_data
-        contact_data[idx]['time_of_posting'] = timestamp_now
-
-        with open(constants.CONTACT_PATH, 'w') as f:
-            f.write(json.dumps(contact_data))
-        context['feedback_message'] = "Your message has been sent successfully!"
-        context['alert_type'] = 'success'
-
-        msg = f'Received message on {request.root_url} from {validate_email(request.form["email"]).email}'
-        bot.send_msg(to='-628470117', msg=msg)
-        return render_template('contact.html', context=context)
 
 @app.context_processor
 def context_variables():
