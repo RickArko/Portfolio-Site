@@ -11,7 +11,7 @@ def get_last_commit_and_upstream_url(origin:str, main_branch:str) -> str:
         return (commit, upstream_url)
     except ps.CalledProcessError:
         print(f'Either git is not initialized or there is no upstream repository available.')
-        return ('https://github.com/RickArko/Portfolio-Site/commit/', 'a086c03')
+        return ('https://github.com/RickArko/Portfolio-Site/commit/', 'a5985ab')
 
 def validate_string(string:str) -> str:
     """ Validates if a given string is valid according to a regex.

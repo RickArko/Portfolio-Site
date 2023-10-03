@@ -32,10 +32,12 @@ def experience():
             experience_data = json.load(f)
         return render_template('experience.html', context=experience_data)
 
+
 @app.route('/blog/')
 def blog():
     if request.method == 'GET':
         return render_template('blog.html')
+
 
 @app.route('/projects/')
 def projects():
@@ -44,17 +46,19 @@ def projects():
             projects_data = json.load(f)
         return render_template('projects.html', context=projects_data)
 
-@app.context_processor
-def context_variables():
-    now = datetime.now()
-    formatted_today = f'{now.year}/{now.month}/{now.day}'
-    commit, upstream_url = get_last_commit_and_upstream_url('origin', 'main')
+
+# @app.context_processor
+# def context_variables():
+#     now = datetime.now()
+#     formatted_today = f'{now.year}/{now.month}/{now.day}'
+#     commit, upstream_url = get_last_commit_and_upstream_url('origin', 'main')
     
-    return {
-        'today' : formatted_today,
-        'last_upstream_commit' : commit,
-        'upstream_url' : upstream_url
-    }
+#     return {
+#         'today' : formatted_today,
+#         'last_upstream_commit' : commit,
+#         'upstream_url' : upstream_url
+#     }
+
 
 application = app
 
